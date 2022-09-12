@@ -1,0 +1,54 @@
+{
+    "name": "coc-list-yanky",
+    "version": "0.0.1",
+    "description": "This plugin is a coc list implement for yanky.nvim",
+    "main": "lib/index.js",
+    "engines": {
+        "coc": "^0.0.82"
+    },
+    "keywords": [
+        "coc",
+        "coc.nvim",
+        "coc-list",
+        "yanky",
+        "yanky.nvim"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "scripts": {
+        "lint": "eslint src --ext ts",
+        "clean": "rimraf lib",
+        "watch": "node esbuild.js --watch",
+        "build": "node esbuild.js",
+        "prepare": "husky install && yarn clean && yarn build"
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx,cjs,mjs}": [
+            "eslint --fix",
+            "prettier --write"
+        ],
+        "*.{json,md,css,less,sass,scss}": [
+            "prettier --write"
+        ]
+    },
+    "repository": "git@github.com:hexh250786313/coc-list-yanky.git",
+    "author": "hexh <250786313@qq.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@tsconfig/recommended": "^1.0.1",
+        "@types/node": "^18.7.16",
+        "@typescript-eslint/eslint-plugin": "^5.36.2",
+        "@typescript-eslint/parser": "^5.36.2",
+        "coc.nvim": "^0.0.82",
+        "esbuild": "^0.15.7",
+        "eslint": "^8.23.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "husky": "^8.0.1",
+        "lint-staged": "^13.0.3",
+        "prettier": "^2.7.1",
+        "rimraf": "^3.0.2",
+        "typescript": "^4.8.3"
+    }
+}
