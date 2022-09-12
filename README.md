@@ -1,4 +1,6 @@
-This plugin is a coc list implement for [yanky.nvim](https://github.com/gbprod/yanky.nvim). If you use coc.nvim and yanky.nvim while have no interest in Telescope like me. You can use it for listing the yanky.nvim yanky.
+[中文简介](https://blog.hexuhua.vercel.app/post/24)
+
+This plugin is a coc list implement for [yanky.nvim](https://github.com/gbprod/yanky.nvim). If you use coc.nvim and yanky.nvim while have no interest in Telescope like me. You can use it for listing the yanky.nvim history.
 
 ## Requirements
 
