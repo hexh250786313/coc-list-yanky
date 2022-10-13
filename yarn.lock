@@ -72,6 +72,13 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/recommended/-/recommended-1.0.1.tgz#7619bad397e06ead1c5182926c944e0ca6177f52"
   integrity sha512-2xN+iGTbPBEzGSnVp/Hd64vKJCJWxsi9gfs88x4PPMyEjHJoA3o5BY9r5OLPHIZU2pAQxkSAsJFqn6itClP8mQ==
 
+"@types/colors@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@types/colors/-/colors-1.2.1.tgz#57703f1a9f7f5fc40afb81eef13e96acdd1016a6"
+  integrity sha512-7jNkpfN2lVO07nJ1RWzyMnNhH/I5N9iWuMPx9pedptxJ4MODf8rRV0lbJi6RakQ4sKQk231Fw4e2W9n3D7gZ3w==
+  dependencies:
+    colors "*"
+
 "@types/json-schema@^7.0.9":
   version "7.0.11"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.11.tgz#d421b6c527a3037f7c84433fd2c4229e016863d3"
@@ -317,6 +324,11 @@ colorette@^2.0.16, colorette@^2.0.17:
   version "2.0.19"
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-2.0.19.tgz#cdf044f47ad41a0f4b56b3a0d5b4e6e1a2d5a798"
   integrity sha512-3tlv/dIP7FWvj3BsbHrGLJ6l/oKh1O3TcgBqMn+yyCagOxc23fyzDS6HypQbgxWbkpDnf52p1LuR4eWDQ/K9WQ==
+
+colors@*, colors@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
+  integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
 
 commander@^9.3.0:
   version "9.4.0"

@@ -1,0 +1,26 @@
+[test]
+command=nvim
+cwd=$(VIM_CWD)
+output=terminal
+pos=exec
+option={"termnr":1}
+
+[watch]
+command=yarn build --watch
+cwd=$(VIM_CWD)
+output=terminal
+pos=watch
+
+[build]
+command=yarn build
+cwd=$(VIM_CWD)
+output=terminal
+pos=exec
+option={"termnr":3}
+
+[publish]
+command=yarn build && npm publish --access .
+cwd=$(VIM_CWD)
+output=terminal
+pos=exec
+option={"termnr":1}

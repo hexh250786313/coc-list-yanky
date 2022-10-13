@@ -16,6 +16,7 @@ import {
     showErrorMessage,
     showWarningMessage,
 } from './helpers'
+import colors from 'colors'
 
 export type HistoryItem = any
 
@@ -165,16 +166,13 @@ export default class YankList extends BasicList {
             } else {
                 regtype = 'block'
             }
-            // const text = item.content.join(' ')
             const text = item.regcontents
             const abbr =
                 text.length > columns - 15
-                    ? // ? text.slice(0, columns - 15) + colors.grey('...')
-                      text.slice(0, columns - 15) + '...'
+                    ? text.slice(0, columns - 15) + colors.grey('...')
                     : text
             res.push({
-                // label: `${colors.yellow(regtype)} ${abbr}`,
-                label: `${regtype} ${abbr}`,
+                label: `${colors.yellow(regtype)} ${abbr}`,
                 filterText: abbr,
                 data: Object.assign(
                     {},
@@ -182,7 +180,9 @@ export default class YankList extends BasicList {
                         index: item.history_index,
                         regtype: item.regtype,
                         filetype: item.filetype,
-                        content: item.regcontents.split('\n'),
+                        content: item.regcontents
+                            .replace(/\n$/, '')
+                            .split('\n'),
                     }
                 ),
             })
